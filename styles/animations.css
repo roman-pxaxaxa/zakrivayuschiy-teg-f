@@ -12,3 +12,123 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+@keyframes theme_menu_selection {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes fill_block {
+  from {
+    inline-size: 0;
+  }
+
+  to {
+    inline-size: 100%;
+  }
+}
+
+@keyframes grow {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0.6;
+  }
+}
+
+/* стили анимаций иконки Like. */
+.card__icon-button .core {
+  opacity: 0;
+  fill: var(--heart-contour-color);
+  transition: opacity 0.3s linear 0.03s;
+}
+
+.card__icon-button .main-body {
+  opacity: 0;
+  fill: var(--heart-contour-color);
+  transition: opacity 0.3s linear;
+}
+
+.card__icon-button:hover .core {
+  opacity: 1;
+  fill: var(--heart-contour-color);
+  transition: opacity 0.3s linear;
+}
+
+.card__icon-button:hover .main-body {
+  opacity: 1;
+  fill: var(--heart-contour-color);
+  transition: opacity 0.3s linear 0.05s;
+}
+
+.card__icon-button:active .core {
+  opacity: 1;
+  fill: var(--heart-fill-color);
+  transition: opacity 0.3s linear;
+}
+
+.card__icon-button:active .main-body {
+  opacity: 1;
+  fill: var(--heart-fill-color);
+  transition: opacity 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .core {
+  opacity: 1;
+  fill: var(--heart-fill-color);
+  transition: opacity 0.3s linear;
+}
+
+.like-icon.is-liked .main-body {
+  opacity: 1;
+  fill: var(--heart-fill-color);
+  transition: opacity 0.3s linear 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  opacity: 1;
+  fill: var(--heart-fill-color);
+  transition: opacity 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: center;
+  animation: grow 0.3s ease-in 0.1s alternate;
+} 
+
+.like-icon.is-liked .sparks {
+  transform-origin: center;
+  animation: sparks 0.3s ease-in 0.3s alternate;
+} 
+
+.like-icon .contour {
+  fill: var(--heart-contour-color);
+  transition: fill 0.1s linear;
+} 
