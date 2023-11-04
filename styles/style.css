@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--general-font);
-  font-variation-settings: 'wght' var(--content-text-weight);
+  font-variation-settings: "wght" var(--content-text-weight);
   background-size: cover;
   background-attachment: fixed;
   background-color: var(--background-color);
@@ -49,12 +49,12 @@
 }
 
 .header__title {
-  font-family: 'PressStart2P';
+  font-family: "PressStart2P";
   font-size: 49px;
 }
 
 .header__subtitle {
-  font-family: 'PressStart2P';
+  font-family: "PressStart2P";
   font-size: 14px;
 }
 
@@ -138,7 +138,7 @@
 
 .card__title {
   font-size: 18px;
-  font-variation-settings: 'wght' var(--title-text-weight);
+  font-variation-settings: "wght" var(--title-text-weight);
   padding: 4px 10px 6px 10px;
 }
 
@@ -163,9 +163,8 @@
   opacity: 0.5;
   mix-blend-mode: hard-light;
   text-shadow: -1px -1px var(--background-color),
-               -1px 1px var(--background-color),
-               1px -1px var(--background-color),
-               1px 1px var(--background-color);
+    -1px 1px var(--background-color), 1px -1px var(--background-color),
+    1px 1px var(--background-color);
 }
 
 .card__content {
@@ -181,7 +180,7 @@
   transition: 0.3s;
   position: relative;
   cursor: pointer;
-  background: var(--background-color, #FFF);
+  background: var(--background-color, #fff);
   border: 2px solid var(--accent-color, #000);
 }
 
@@ -231,7 +230,7 @@
   cursor: pointer;
   padding: 0;
   overflow: visible;
-  border: 2px solid transparent ;
+  border: 2px solid transparent;
   transition: 0.3s ease;
 }
 
@@ -349,7 +348,7 @@
 }
 
 .tiredness {
-  filter: opacity(0.7) contrast(150%);;
+  filter: opacity(0.7) contrast(150%);
 }
 
 .skepticism {
@@ -360,7 +359,7 @@
   .header__title {
     font-size: 65px;
   }
-  
+
   .header__subtitle {
     font-size: 23px;
   }

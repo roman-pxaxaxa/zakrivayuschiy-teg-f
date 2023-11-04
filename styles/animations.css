@@ -121,14 +121,14 @@
 .like-icon.is-liked .heart {
   transform-origin: center;
   animation: grow 0.3s ease-in 0.1s alternate;
-} 
+}
 
 .like-icon.is-liked .sparks {
   transform-origin: center;
   animation: sparks 0.3s ease-in 0.3s alternate;
-} 
+}
 
 .like-icon .contour {
   fill: var(--heart-contour-color);
   transition: fill 0.1s linear;
-} 
+}
