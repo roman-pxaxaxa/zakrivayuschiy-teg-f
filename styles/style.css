@@ -167,6 +167,14 @@
     1px 1px var(--background-color);
 }
 
+@supports((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
+  .card__image-title {
+      -webkit-text-stroke: 1px var(--background-color);
+      text-stroke: 1px var(--background-color);
+      text-shadow: none;
+  }
+}
+
 .card__content {
   display: flex;
   flex-direction: column;
@@ -226,7 +234,6 @@
 .card__icon-button {
   display: flex;
   background: transparent;
-  border: 0px solid transparent;
   cursor: pointer;
   padding: 0;
   overflow: visible;
