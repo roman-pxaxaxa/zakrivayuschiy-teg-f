@@ -33,7 +33,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  max-width: 698px;
+  max-inline-size: 698px;
   gap: 25px;
   font-family: var(--special-font);
   text-transform: uppercase;
@@ -49,12 +49,12 @@
 }
 
 .header__title {
-  font-family: "PressStart2P";
+  font-family: var(--special-font);
   font-size: 49px;
 }
 
 .header__subtitle {
-  font-family: "PressStart2P";
+  font-family: var(--special-font);
   font-size: 14px;
 }
 
@@ -74,6 +74,7 @@
   text-transform: uppercase;
   position: relative;
   cursor: pointer;
+  transition: opacity 0.3s ease;
 }
 
 .theme-menu__button:focus {
@@ -88,7 +89,6 @@
 .theme-menu__button:disabled {
   opacity: 0.6;
   pointer-events: none;
-  transition: color 0.3s ease;
 }
 
 .theme-menu__button:disabled::before {
@@ -104,10 +104,11 @@
   bottom: -2px;
   left: 0;
   block-size: 2px;
-  inline-size: 0px;
+  min-inline-size: 100%;
   background-color: var(--accent-color);
-  opacity: 0.6;
-  transition: 0.3s;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
 }
 
 .theme-menu__button:focus-visible {
@@ -115,11 +116,11 @@
 }
 
 .theme-menu__button:focus-visible::after {
-  inline-size: 100%;
+  transform: scaleX(1);
 }
 
 .main {
-  max-width: 700px;
+  max-inline-size: 700px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -132,7 +133,7 @@
   flex-direction: column;
   background-color: var(--background-color);
   border: 2px solid var(--accent-color, #000);
-  max-width: 696px;
+  max-inline-size: 696px;
   margin-bottom: 54px;
 }
 
@@ -149,6 +150,7 @@
 }
 
 .card__image-content {
+  display: block;
   object-fit: cover;
   object-position: center;
   inline-size: 100%;
@@ -162,15 +164,13 @@
   font-family: var(--special-font);
   opacity: 0.5;
   mix-blend-mode: hard-light;
-  text-shadow: -1px -1px var(--background-color),
-    -1px 1px var(--background-color), 1px -1px var(--background-color),
-    1px 1px var(--background-color);
+  text-shadow: 0 0 1px var(--button-text-color);
 }
 
-@supports((text-stroke: 1px var(--background-color)) or (-webkit-text-stroke: 1px var(--background-color))) {
+@supports((text-stroke: 1px var(--button-text-color)) or (-webkit-text-stroke: 1px var(--button-text-color))) {
   .card__image-title {
-      -webkit-text-stroke: 1px var(--background-color);
-      text-stroke: 1px var(--background-color);
+      -webkit-text-stroke: 1px var(--button-text-color);
+      text-stroke: 1px var(--button-text-color);
       text-shadow: none;
   }
 }
@@ -181,15 +181,15 @@
   gap: 25px;
   padding: 25px 25px 24px 25px;
   font-size: 18px;
-  line-height: 1.19;
+  line-height: 1.16667;
 }
 
 .button {
-  transition: 0.3s;
   position: relative;
   cursor: pointer;
   background: var(--background-color, #fff);
   border: 2px solid var(--accent-color, #000);
+  transition: box-shadow 0.3s;
 }
 
 .button:focus {
@@ -235,10 +235,11 @@
   display: flex;
   background: transparent;
   cursor: pointer;
+  inline-size: 39px;
+  block-size: 36px;
   padding: 0;
-  overflow: visible;
   border: 2px solid transparent;
-  transition: 0.3s ease;
+  transition: border 0.3s ease;
 }
 
 .card__icon-button:focus {
@@ -330,35 +331,35 @@
   align-items: center;
 }
 
-.inspiration {
+.card__image-content_type_inspiration {
   filter: brightness(150%);
 }
 
-.anxiety {
+.card__image-content_type_anxiety {
   filter: saturate(50%);
 }
 
-.satisfaction {
+.card__image-content_type_satisfaction {
   filter: saturate(10%) grayscale(60%);
 }
 
-.chase {
+.card__image-content_type_chase {
   filter: invert(10%);
 }
 
-.support {
+.card__image-content_type_support {
   filter: grayscale(0.4);
 }
 
-.breakdown {
+.card__image-content_type_breakdown {
   filter: blur(1px);
 }
 
-.tiredness {
+.card__image-content_type_tiredness {
   filter: opacity(0.7) contrast(150%);
 }
 
-.skepticism {
+.card__image-content_type_skepticism {
   filter: grayscale(60%) brightness(0.9);
 }
 

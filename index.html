@@ -19,8 +19,8 @@
   <body class="page">
     <header class="header">
       <div class="header__logo">
-        <h1 class="header__title">&lt;/HTML&gt;</h1>
-        <h2 class="header__subtitle">закрывающий тег</h2>
+        <span class="header__title">&lt;/HTML&gt;</span>
+        <h1 class="header__subtitle">закрывающий тег</h1>
       </div>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
@@ -55,33 +55,31 @@
         </h2>
         <div class="card__image-wrapper">
           <img
-            class="card__image-content inspiration"
+            class="card__image-content card__image-content_type_inspiration"
             loading="lazy"
             src="./images/1.webp"
             alt="Гарри Поттер первый раз держит волшебную палочку"
           />
-          <p class="card__image-title">Inspiration</p>
+          <span class="card__image-title">Inspiration</span>
         </div>
         <div class="card__content">
-          <p class="card__content-introduction">
+          <p>
             Это было самое начало пути. На этом этапе важно было проникнуться
             основами и настроиться на учёбу. И, возможно, подумать, как новые
             знания могут повлиять на ваше будущее.
           </p>
-          <p class="card__content-reflection">
+          <p>
             «Не забывайте о том, что все великие волшебники в истории в свое
             время были такими же, как мы, — школьниками. Если у них получилось,
             то получится и у нас»
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-labelledby="inspiration_like_button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                width="39"
-                height="36"
                 viewBox="0 0 39 36"
-                fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -107,7 +105,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button class="button card__like-button" type="button" id="inspiration_like_button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -117,12 +115,12 @@
         <h2 class="card__title">1 спринт: Я — чистый лист</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__image-content anxiety"
+            class="card__image-content card__image-content_type_anxiety"
             loading="lazy"
             src="./images/2.webp"
             alt="Тележка с вещами волшебника застряла в стене платформы 9 и 3/4"
           />
-          <p class="card__image-title">Anxiety</p>
+          <span class="card__image-title">Anxiety</span>
         </div>
         <div class="card__content">
           <p class="card__content-introduction">
@@ -137,14 +135,12 @@
             тебя храбрости.»
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-labelledby="anxiety_like_button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                width="39"
-                height="36"
                 viewBox="0 0 39 36"
-                fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -170,7 +166,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button class="button card__like-button" type="button" id="anxiety_like_button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -180,12 +176,12 @@
         <h2 class="card__title">1 спринт: А если не получится?</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__image-content satisfaction"
+            class="card__image-content card__image-content_type_satisfaction"
             loading="lazy"
             src="./images/3.webp"
             alt="Гарри Поттер смотрит в камеру довольно улыбаясь"
           />
-          <p class="card__image-title">Satisfaction</p>
+          <span class="card__image-title">Satisfaction</span>
         </div>
         <div class="card__content">
           <p class="card__content-introduction">
@@ -198,14 +194,12 @@
             что правильно, и тем, что легко.»
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-labelledby="satisfaction_like_button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                width="39"
-                height="36"
                 viewBox="0 0 39 36"
-                fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -231,7 +225,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button class="button card__like-button" type="button" id="satisfaction_like_button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -241,12 +235,12 @@
         <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__image-content chase"
+            class="card__image-content card__image-content_type_chase"
             loading="lazy"
             src="./images/4.webp"
             alt="Профессор Локконс обнимает Гарри и Рона"
           />
-          <p class="card__image-title">The chase</p>
+          <span class="card__image-title">The chase</span>
         </div>
         <div class="card__content">
           <p class="card__content-introduction">
@@ -262,14 +256,12 @@
             дураков.»
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-labelledby="chase_like_button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                width="39"
-                height="36"
                 viewBox="0 0 39 36"
-                fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -295,7 +287,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button class="button card__like-button" type="button" id="chase_like_button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -305,12 +297,12 @@
         <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__image-content support"
+            class="card__image-content card__image-content_type_support"
             loading="lazy"
             src="./images/5.webp"
             alt="Сириус Блек любуется Гарри и говорит как он похож на отца"
           />
-          <p class="card__image-title">Support</p>
+          <span class="card__image-title">Support</span>
         </div>
         <div class="card__content">
           <p class="card__content-introduction">
@@ -326,14 +318,12 @@
             насколько разъединены.»
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-labelledby="support_like_button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                width="39"
-                height="36"
                 viewBox="0 0 39 36"
-                fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -359,7 +349,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button class="button card__like-button" type="button" id="support_like_button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -369,12 +359,12 @@
         <h2 class="card__title">3 спринт: Обходные стратегии</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__image-content breakdown"
+            class="card__image-content card__image-content_type_breakdown"
             loading="lazy"
             src="./images/6.webp"
             alt="Дамблдор хлопает Рона Уизли по больной ноге"
           />
-          <p class="card__image-title">Breakdown</p>
+          <span class="card__image-title">Breakdown</span>
         </div>
         <div class="card__content">
           <p class="card__content-introduction">
@@ -386,14 +376,12 @@
             «Не стоит упускать возможность насладиться хорошей погодой.»
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-labelledby="breakdown_like_button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                width="39"
-                height="36"
                 viewBox="0 0 39 36"
-                fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -419,7 +407,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button class="button card__like-button" type="button" id="breakdown_like_button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -429,12 +417,12 @@
         <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__image-content tiredness"
+            class="card__image-content card__image-content_type_tiredness"
             loading="lazy"
             src="./images/7.webp"
             alt="Гарри и Рон безнадежно смотрят в магический шар"
           />
-          <p class="card__image-title">Tiredness</p>
+          <span class="card__image-title">Tiredness</span>
         </div>
         <div class="card__content">
           <p class="card__content-introduction">
@@ -448,14 +436,12 @@
             «Все возможно, если никто не доказал, что этого не существует.»
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-labelledby="tiredness_like_button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                width="39"
-                height="36"
                 viewBox="0 0 39 36"
-                fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -481,7 +467,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button class="button card__like-button" type="button" id="tiredness_like_button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -491,12 +477,12 @@
         <h2 class="card__title">«Сейчас я здесь»</h2>
         <div class="card__image-wrapper">
           <img
-            class="card__image-content skepticism"
+            class="card__image-content card__image-content_type_skepticism"
             loading="lazy"
             src="./images/8.webp"
             alt="Унылые лица Гарри, Рона и Симуса"
           />
-          <p class="card__image-title">Skepticism</p>
+          <span class="card__image-title">Skepticism</span>
         </div>
         <div class="card__content">
           <p class="card__content-introduction">
@@ -512,14 +498,12 @@
             что предсказание будущего и впрямь невероятно трудная задача.»
           </p>
           <div class="card__buttons">
-            <button class="card__icon-button" type="button">
+            <button class="card__icon-button" type="button" aria-labelledby="skepticism_like_button">
               <svg
                 class="like-icon"
                 xmlns="http://www.w3.org/2000/svg"
-                width="39"
-                height="36"
                 viewBox="0 0 39 36"
-                fill="none"
+                aria-hidden="true"
               >
                 <g class="heart">
                   <path
@@ -545,7 +529,7 @@
                 />
               </svg>
             </button>
-            <button class="button card__like-button">
+            <button class="button card__like-button" type="button" id="skepticism_like_button">
               <span class="button__text">Like</span>
             </button>
           </div>
@@ -564,23 +548,23 @@
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
-      <dialog id="dialog-save" class="footer__dialog">
-        <div class="footer__dialog-title">
-          <svg class="footer__button-image dialog-image">
-            <use href="svg/floppy.svg#floppy"></use>
-          </svg>
-          <p class="footer__dialog-message">
-            Вставьте дискету, чтобы продолжить
-          </p>
-        </div>
-        <button
-          class="button footer__dialog-button"
-          onclick="window['dialog-save'].close()"
-        >
+    </footer>
+    <dialog id="dialog-save" class="footer__dialog">
+      <div class="footer__dialog-title">
+        <svg class="footer__button-image dialog-image">
+          <use href="svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="footer__dialog-message">
+          Вставьте дискету, чтобы продолжить
+        </p>
+      </div>
+      <form>
+        <button class="button footer__dialog-button" type="submit" aria-controls="dialog-id">
           <span class="button__text">ОК</span>
         </button>
-      </dialog>
-    </footer>
+      </form>
+      
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
