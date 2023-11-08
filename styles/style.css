@@ -167,11 +167,14 @@
   text-shadow: 0 0 1px var(--button-text-color);
 }
 
-@supports((text-stroke: 1px var(--button-text-color)) or (-webkit-text-stroke: 1px var(--button-text-color))) {
+@supports (
+  (text-stroke: 1px var(--button-text-color)) or
+    (-webkit-text-stroke: 1px var(--button-text-color))
+) {
   .card__image-title {
-      -webkit-text-stroke: 1px var(--button-text-color);
-      text-stroke: 1px var(--button-text-color);
-      text-shadow: none;
+    -webkit-text-stroke: 1px var(--button-text-color);
+    text-stroke: 1px var(--button-text-color);
+    text-shadow: none;
   }
 }
 
